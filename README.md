@@ -93,7 +93,7 @@ I'm always open to new collaborations and exciting ideas. Feel free to reach out
 
 - **GitHub:** [@anubhabguha1999](https://github.com/anubhabguha1999)
 - **Portfolio:** [Your Portfolio Link Here]
-- **Email:** your.email@example.com
+- **Email:** anubhabguha1999@gmail.com
 
 ---
 
