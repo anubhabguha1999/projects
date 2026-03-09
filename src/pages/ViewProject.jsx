@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { getProjectById } from "../data/projects";
 import ParticleField from "../components/ParticleField";
+import SEO from "../components/SEO";
 import "../styles/view-project.css";
 
 export default function ViewProject() {
@@ -22,6 +23,12 @@ export default function ViewProject() {
 
   return (
     <div className="view-project">
+      <SEO
+        title={project.title}
+        description={project.description}
+        keywords={`${project.title}, ${project.tech.join(", ")}, Anubhab Guha`}
+        image={project.screenshots?.[0]}
+      />
       <ParticleField />
 
       <div className="view-project-content">

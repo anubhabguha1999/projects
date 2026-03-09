@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Hero from "../components/Hero";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
+import SEO from "../components/SEO";
 import "../styles/home.css";
 
 export default function Home() {
@@ -13,6 +14,11 @@ export default function Home() {
 
   return (
     <main className="home-page">
+      <SEO
+        title="Home"
+        description="Software Engineer specializing in high-performance web applications, 3D interactive experiences, and AI-powered tools."
+        keywords="Anubhab Guha, Software Engineer, React Developer, Three.js, AI Developer, Full Stack Developer, Portfolio"
+      />
       <div className="home-bg-blobs">
         <div className="blob blob-1" />
         <div className="blob blob-2" />
