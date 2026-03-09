@@ -11,6 +11,9 @@
 import gitReviewerScreen1 from '../assets/git-code-reviewer/screenshot1.png'
 import gitReviewerScreen2 from '../assets/git-code-reviewer/screenshot2.png'
 import prGeneratorImg from '../assets/pr-generator/image.png'
+import forgeImg1 from '../assets/forge-developers/image.png'
+import forgeImg2 from '../assets/forge-developers/image copy.png'
+import forgeImg3 from '../assets/forge-developers/image copy 2.png'
 
 export const projects = [
   {
@@ -51,7 +54,25 @@ export const projects = [
     featured: true,
     color: "#4b7bec",
   },
-
+  {
+    id: "forge-developers",
+    title: "Forge Developers",
+    description: "A comprehensive DevTools SaaS platform featuring Postman-like API testing controls and developer productivity suites.",
+    longDescription: "Forge Developers is a professional SaaS environment designed to centralize developer workflows. Its core feature is a robust API Request Builder with Postman-like controls, allowing developers to execute GET, POST, PUT, and DELETE requests, manage complex headers, and inspect JSON responses in a structured environment. Built with a focus on modern UX, it serves as a central hub for testing and managing API-driven applications.",
+    features: [
+      "API Tester: Full request/response lifecycle management similar to Postman.",
+      "Custom Headers: Dynamic header injection for authenticated requests.",
+      "Response Visualization: Pretty-printed JSON response viewer.",
+      "Workspace History: Keep track of all your past requests and configurations.",
+      "SaaS Ready: Designed with scalability and user multitenancy in mind."
+    ],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Clerk"],
+    screenshots: [forgeImg1, forgeImg2, forgeImg3],
+    github: "https://github.com/anubhabguha1999/devtools-saas",
+    live: "https://forge-developers.vercel.app/",
+    featured: true,
+    color: "#00cec9",
+  },
 ]
 
 export function getProjectById(id) {
