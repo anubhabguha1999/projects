@@ -28,6 +28,7 @@ export const projects = [
     screenshots: [gitReviewerScreen1, gitReviewerScreen2],
     github: "https://github.com/anubhabguha1999/git-code-reviewer",
     live: "",
+    isPrivate: true,
     featured: true,
     color: "#6c5ce7",
   },
@@ -55,6 +56,7 @@ export const projects = [
     github: "https://github.com/anubhabguha1999/pr-generator",
     live: "",
     featured: true,
+    isPrivate: true,
     color: "#4b7bec",
   },
   {
@@ -74,6 +76,7 @@ export const projects = [
     github: "https://github.com/anubhabguha1999/devtools-saas",
     live: "https://forge-developers.vercel.app/",
     featured: true,
+    isPrivate: true,
     color: "#00cec9",
   },
   {
@@ -93,6 +96,7 @@ export const projects = [
     github: "https://github.com/anubhabguha1999/youtube-downloader-pro",
     live: "https://youtube-downloader-pro-psi.vercel.app/",
     featured: true,
+    isPrivate: true,
     color: "#ff0000",
   },
 ]
