@@ -14,6 +14,9 @@ import prGeneratorImg from '../assets/pr-generator/image.png'
 import forgeImg1 from '../assets/forge-developers/image.png'
 import forgeImg2 from '../assets/forge-developers/image copy.png'
 import forgeImg3 from '../assets/forge-developers/image copy 2.png'
+import ytDownloaderImg1 from '../assets/youtube-downloader/image.png'
+import ytDownloaderImg2 from '../assets/youtube-downloader/image copy.png'
+import ytDownloaderImg3 from '../assets/youtube-downloader/image copy 2.png'
 
 export const projects = [
   {
@@ -72,6 +75,25 @@ export const projects = [
     live: "https://forge-developers.vercel.app/",
     featured: true,
     color: "#00cec9",
+  },
+  {
+    id: "youtube-downloader-pro",
+    title: "YouTube Downloader Pro",
+    description: "A high-performance video downloader capable of fetching 4K content and converting media with ease.",
+    longDescription: "YouTube Downloader Pro is a robust, full-stack application designed for high-resolution video retrieval. It features an intuitive dashboard where users can input YouTube URLs, select from multiple resolutions (up to 4K), and extract high-quality MP3 audio. The application utilizes advanced stream processing to ensure fast downloads and integrates with a clean, responsive UI for an optimal user experience across all devices.",
+    features: [
+      "4K Video Support: Download videos in the highest available quality.",
+      "MP3 Extraction: High-bitrate audio conversion for playlists and single tracks.",
+      "Batch Processing: Efficient handling of multiple download requests.",
+      "Real-time Progress: Live status tracking for all active downloads.",
+      "Responsive UI: Seamless experience on mobile and desktop browsers."
+    ],
+    tech: ["React", "TypeScript", "Node.js", "Express", "Tailwind CSS", "ffmpeg"],
+    screenshots: [ytDownloaderImg1, ytDownloaderImg2, ytDownloaderImg3],
+    github: "https://github.com/anubhabguha1999/youtube-downloader-pro",
+    live: "https://youtube-downloader-pro-psi.vercel.app/",
+    featured: true,
+    color: "#ff0000",
   },
 ]
 
