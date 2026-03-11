@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
-import Scene3D from "./Scene3D";
+// import Scene3D from "./Scene3D";
 import "../styles/hero.css";
 
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero-canvas">
-        <Scene3D />
-      </div>
+     ÷
 
       <motion.div
         className="hero-content"
@@ -107,21 +105,6 @@ export default function Hero() {
         />
       </motion.div>
 
-      <motion.div
-        className="hero-scroll-indicator"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-      >
-        <span className="scroll-text">Discover More</span>
-        <div className="scroll-mouse">
-          <motion.div
-            className="scroll-wheel"
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </div>
-      </motion.div>
     </section>
   );
 }

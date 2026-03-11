@@ -19,12 +19,6 @@ export default function Home() {
         description="Software Engineer specializing in high-performance web applications, 3D interactive experiences, and AI-powered tools."
         keywords="Anubhab Guha, Software Engineer, React Developer, Three.js, AI Developer, Full Stack Developer, Portfolio"
       />
-      <div className="home-bg-blobs">
-        <div className="blob blob-1" />
-        <div className="blob blob-2" />
-        <div className="blob blob-3" />
-      </div>
-
       <Hero />
 
       <section id="projects" className="projects-section" ref={projectsRef}>

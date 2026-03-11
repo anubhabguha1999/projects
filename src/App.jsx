@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Background from './components/Background'
 
 const Home = lazy(() => import('./pages/Home'))
 const ViewProject = lazy(() => import('./pages/ViewProject'))
@@ -9,6 +10,7 @@ const ViewProject = lazy(() => import('./pages/ViewProject'))
 function App() {
   return (
     <>
+      <Background />
       <Navbar />
       <Suspense fallback={
         <div style={{
