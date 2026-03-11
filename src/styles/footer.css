@@ -1,57 +1,201 @@
 .footer {
-  padding: 40px 0;
+  position: relative;
+  padding: 120px 0 60px;
+  background: var(--bg-primary);
+  overflow: hidden;
   border-top: 1px solid var(--border);
-  background: var(--bg-secondary);
+}
+
+.footer-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 25vw, 15rem);
+  font-weight: 900;
+  color: white;
+  opacity: 0.02;
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: -0.05em;
+  z-index: 0;
 }
 
 .footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
+  z-index: 1;
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--container-padding);
 }
 
-.footer-text {
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.footer-brand {
+  max-width: 450px;
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.footer-logo span {
+  color: var(--accent);
+}
+
+.footer-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.footer-email {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
+  transition: all var(--transition-normal);
+}
+
+.footer-email:hover {
+  color: var(--accent-light);
+  border-color: var(--accent-light);
+  letter-spacing: 0.5px;
+}
+
+.footer-nav-groups {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-nav-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-nav-list a {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all var(--transition-normal);
+}
+
+.footer-nav-list a:hover {
+  color: var(--text-primary);
+  transform: translateX(4px);
+}
+
+.footer-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, 
+    var(--border) 0%, 
+    rgba(255, 255, 255, 0.1) 50%, 
+    var(--border) 100%
+  );
+  margin-bottom: 40px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
   font-size: 0.85rem;
   color: var(--text-muted);
 }
 
-.footer-text span {
-  color: var(--accent-light);
-}
-
-.footer-links {
-  display: flex;
-  gap: 20px;
-}
-
-.footer-link {
-  width: 36px;
-  height: 36px;
+.back-to-top {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: var(--bg-glass);
-  border: 1px solid var(--border);
-  border-radius: 50%;
+  gap: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   color: var(--text-secondary);
-  font-size: 0.9rem;
   transition: all var(--transition-normal);
 }
 
-.footer-link:hover {
+.back-to-top:hover {
+  color: var(--text-primary);
+  transform: translateY(-4px);
+}
+
+.back-to-top svg {
+  padding: 8px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  transition: all var(--transition-normal);
+}
+
+.back-to-top:hover svg {
   background: var(--accent);
   border-color: var(--accent);
   color: white;
-  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .footer-grid {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 80px 0 40px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .footer-nav-groups {
+    gap: 40px;
+  }
 }
 
 @media (max-width: 480px) {
-  .footer-inner {
+  .footer-nav-groups {
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 32px;
     text-align: center;
+  }
+
+  .back-to-top {
+    order: -1;
   }
 }
