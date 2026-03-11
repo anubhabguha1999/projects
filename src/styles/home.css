@@ -1,7 +1,6 @@
 .home-page {
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 
 @keyframes blob-move {
@@ -13,6 +12,7 @@
 .projects-section {
   padding: 120px 0;
   position: relative;
+  z-index: 10;
 }
 
 .section-header {
@@ -45,9 +45,9 @@
 }
 
 .section-subtitle {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: var(--text-secondary);
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
 }
 

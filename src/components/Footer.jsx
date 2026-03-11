@@ -44,20 +44,11 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://linkedin.com/in/anubhabguha1999"
+                    href="https://www.linkedin.com/in/anubhab-guha-478967201/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/anubhabguha1999"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Twitter
                   </a>
                 </li>
               </ul>
